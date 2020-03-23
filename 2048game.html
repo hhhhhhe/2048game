@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048game</title>
+    <link rel="stylesheet" href="./css/2048game.css">
+</head>
+
+<body>
+    <div class="game">
+        <!-- 实现上一部分 标题、更新按钮、几分框  -->
+        <div class="game_top">
+            <h1>2048Game</h1>
+            <button id="newgame"> New Game </button>
+            <p>Score: <span id="srcoe">0</span></p>
+        </div>
+        <!-- 中间16个空格部分 -->
+        <div class="game_container">
+
+            <div class="c1" id="c_0_0"></div>
+            <div class="c2" id="c_0_1"></div>
+            <div class="c3" id="c_0_2"></div>
+            <div class="c4" id="c_0_3"></div>
+            <div class="c5" id="c_1_0"></div>
+            <div class="c6" id="c_1_1"></div>
+            <div class="c7" id="c_1_2"></div>
+            <div class="c8" id="c_1_3"></div>
+            <div class="c9" id="c_2_0"></div>
+            <div class="c10" id="c_2_1"></div>
+            <div class="c11" id="c_2_2"></div>
+            <div class="c12" id="c_2_3"></div>
+            <div class="c13" id="c_3_0"></div>
+            <div class="c14" id="c_3_1"></div>
+            <div class="c15" id="c_3_2"></div>
+            <div class="c16" id="c_3_3"></div>
+        </div>
+        <!-- 控制小方格移动的按钮 -->
+        <div class="game_control">
+            <button class="b1" id="up"><img src="./img/箭头.png" alt=""></button>
+            <button class="b2" id="l"><img src="./img/箭头.png" alt=""></button>
+            <button class="b3" id="r"><img src="./img/箭头.png" alt=""></button>
+            <button class="b4" id="down"><img src="./img/箭头.png" alt=""></button>
+        </div>
+
+        <!-- 游戏开始提示语 -->
+        <!-- 游戏结果提示语 -->
+        <div class="win hide" id="win_over">
+            <h1 id="game_win" class="hide">congratulate<br><span>꒰๑´•.̫ • `๑꒱</span></h1>
+            <h1 id="game_over" class="hide">game over<br><span> ╮(๑•́ ₃•̀๑)╭</span></h1>
+            <p id="notic">通过控制页面的按钮或者是键盘上的方向键，上下左右合并数字至2048即为胜利</p>
+        </div>
+    </div>
+    </div>
+    <script src="js/mian.js"></script>
+    <script src="js/bgColor.js"></script>
+    <script src="js/move.js"></script>
+    <!-- <script src="js/animation.js"></script> -->
+</body>
+
+</html>

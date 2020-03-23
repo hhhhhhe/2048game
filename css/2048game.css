@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    MARGIN-RIGHT: auto;
+    MARGIN-LEFT: auto;
+}
+
+body{
+   width:100%;
+   height:100%;
+}
+
+.game{
+    position: absolute;
+    text-align: center;
+    width: 34%;
+    height: 98%;
+    border: 2px #ee8972 solid;
+    margin-top: 1%;
+    margin-left: 33%;
+    border-radius: 5px;
+    background-color: #fbe3b9;
+}
+
+.game .game_top{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    /* border: 1px yellow solid; */
+}
+
+.game .game_top h1{
+    position: relative;
+    display: block;
+    font-size: 52px;
+    top: 5%;
+    margin-bottom: 0;
+    color: #ee8972;
+    /* border: 1px rebeccapurple solid; */
+}
+
+ .game .game_top button{
+     position: relative;
+     height: 22%;
+     background-color: #ee8972;
+     color:#fff;
+     margin-top: 2%;
+     border-radius: 2px;
+     font-size: 28px;
+ }
+
+ .game .game_top button:focus{
+    box-shadow: 4px 4px #d1cebd;
+    outline: none;
+    opacity: 0.9;
+ }
+
+ .game .game_top p{
+     display: block;
+     position: relative;
+     /* width: 80%; */
+     height: 20%;
+     margin-top: 2%;
+     font-size: 100%;
+     color: #ee8972;
+ }
+
+    .game .game_top p span{
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+        border:2px #ee8972 solid;
+        border-radius: 5%;
+        color: #ee8972;
+        /* line-height: 32px; */
+        font-size: 100%;
+        width: 30%;
+    }
+    .game .game_container{
+        position: absolute;
+        width: 82%;
+        height: 50%;
+        /* padding: 2px #ee8972 solid; */
+        border: 2px #ee8972 solid;
+        /* margin-top: 40%; */
+        margin: 1% 7%;
+        border-radius: 2px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 2% 1% 1% 1%;
+        background-color: #ee8972;
+    }
+    .game .game_container div{
+        position: relative;
+        width: 22%;
+        height: 22%;
+        /* border: 1px #ee8972 solid; */
+        border-radius: 2px; 
+        background-color: #d1cebd;
+        /* box-shadow: -1px -1px -1px -1px #ee8972; */
+    }
+
+    .game .game_control{
+        position: absolute;
+        width: 34%;
+        height: 22%;
+        margin: 1% 7%;
+        bottom: 1px;
+        margin-top: 78%;
+        margin-left: 33%;
+        border: 2px #ee8972 solid;
+        border-radius: 2px;
+        background-color: #ee8972;
+    }
+    .game .game_control button{
+        display: block;
+        position: absolute;
+        width: 32%;
+        height: 32%;
+        border: 1px yellow solid;
+        background-color: #ee8972;
+        border-radius: 2px;
+        background-color: #d1cebd;
+    }
+    .game .game_control .b1{
+        position: absolute;
+        margin-left: 34%;
+        margin-top: 1%;
+    }
+    .game .game_control .b2{
+        position: absolute;
+        top: 31%;
+    }
+    .game .game_control .b3{
+        position: absolute;
+        top: 31%;
+        margin-left: 69%;
+    }
+    .game .game_control .b4{
+        position: absolute;
+        bottom: 2%;
+        margin-left: 34%;
+    }
+    .game .game_control button img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+    .game .game_control .b1 img{
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg); /* IE 9 */
+        -moz-transform: rotate(-90deg); /* Firefox */
+        -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+        -o-transform: rotate(-90deg); /* Opera */
+    }
+    .game .game_control .b4 img{
+        transform: rotate(90deg);
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -moz-transform: rotate(90deg); /* Firefox */
+        -webkit-transform: rotate(90deg); /* Safari and Chrome */
+        -o-transform: rotate(90deg); /* Opera */
+    }
+    .game .game_control .b2 img{
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -moz-transform: rotate(180deg); /* Firefox */
+        -webkit-transform: rotate(180deg); /* Safari and Chrome */
+        -o-transform: rotate(180deg); /* Opera */
+    }
+
+    .game .game_control button:focus{
+        box-shadow: 4px 4px #d1cebd;
+        outline: none;
+        opacity: 0.9;
+    }
+    /* 设置方格里的数字 */
+    .num_set{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 52px;
+        color: #3c3d47;
+        font-weight: 800;
+    }
+    .win{
+        position: absolute;
+        height: 15%;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 25%;
+        background: #000000;
+        border: 1px sienna solid;
+        border-radius: 15px;
+        opacity: 0.8;
+        color: #fff;
+        text-align: center;
+        
+    }
+    .hide{
+        display: none;
+    } 
+    .win h1{
+        margin-top: 3%;
+    }
+    .win span{
+        font-size: 28px;
+    }
+    .t1{
+        width:100%;
+       height:100%;
+       position: absolute;
+       z-index: 1;
+       animation:divanimation 5s infinite;
+       -moz-animation:divanimation 5s infinite; /* Firefox */
+       -webkit-animation:divanimation 5s infinite; /* Safari and Chrome */
+       -o-animation:divanimation 5s infinite; /* Opera */
+       }
+       
+       @keyframes divanimation
+       {
+           from {width: 100%; height: 100%; top: 0%;left: 0; font-size: 18px; line-height: 45px; background: #000000 ;display: block;}
+            to {width: 100%; height: 100%; top: 0%;left: 340%; font-size: 48px; line-height: 45px;background: #000000 ; display: none;}
+       }
+       
+       @-moz-keyframes divanimation /* Firefox */
+       {
+        from {width: 45px; height: 45px; top: 24px;left: 24px; font-size: 18px; line-height: 45px;display: block;}
+        to {width: 45px; height: 45px; top: 0px;left: 0px; font-size: 48px; line-height: 45px;display: none;}
+       
+       }
+       
+       @-webkit-keyframes divanimation /* Safari and Chrome */
+       {
+        from {width: 45px; height: 45px; top: 24px;left: 24px; font-size: 18px; line-height: 45px;display: block;}
+        to {width: 45px; height: 45px; top: 0px;left: 0px; font-size: 48px; line-height: 45px;display: none;}
+       
+       }
+       
+       @-o-keyframes divanimation /* Opera */
+       {
+        from {width: 45px; height: 45px; top: 24px;left: 24px; font-size: 18px; line-height: 45px;display: block;}
+        to {width: 45px; height: 45px; top: 0px;left: 0px; font-size: 48px; line-height: 45px;display: none;}
+        
+       }
+       
